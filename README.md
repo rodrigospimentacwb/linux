@@ -26,6 +26,7 @@
 - Instalar o Oh my ZSH:
 
   ```curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh; zsh```
+  * Reiniciar o Ununtu
 
 - Adicionar plugin DNF:
 
@@ -50,8 +51,22 @@
 
 
 - Instalar plugin FZF:
- 
-  https://github.com/junegunn/fzf
+
+  ```git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && ~/.fzf/install```
+  * Responder “y” a todas as perguntas  
+  * Agora com CTRL + T no terminal é mostrado as pastas para seleção
+  * Com CTRL + R, tem a lista dos ultimo comandos executados
+  * Documentação: https://github.com/junegunn/fzf
+
+- Instalar Hack font:
+
+  * Fazer donwload da fonte [aqui](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.0.0/Hack.zip)
+  * Executar os commandos:
+  ```
+    mkdir ~/.fonts && cd ~/.fonts
+    unzip ~/Downloads/<the_chosen_font>.zip
+  ```
+  * Alterar a font padrão nas propriedades do terminal
   
  Referências:
 * [Tutorial 1](https://blog.rocketseat.com.br/terminal-com-oh-my-zsh-spaceship-dracula-e-mais/)
