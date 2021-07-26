@@ -6,26 +6,26 @@
 
 - Antes de começar, atualizar o apt get:
 
-  ```sudo apt update && sudo apt upgrade```
+  ```$ sudo apt update && sudo apt upgrade```
 
 - Instar o cUrl:
 
-  ```sudo apt install curl```
+  ```$ sudo apt install curl```
 
 - Instalar o GIT:
 
-  ```sudo apt-get install git-all```
+  ```$ sudo apt-get install git-all```
   
 
 ### ZSH Terminal:
   
 - Instalar ZSH:
 
-  ```apt install zsh```
+  ```$ apt install zsh```
 
 - Instalar o Oh my ZSH:
 
-  ```curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh; zsh```
+  ```$ curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh; zsh```
   * Reiniciar o Ununtu
 
 - Adicionar plugin DNF:
@@ -41,18 +41,18 @@
 
 - Instalar o plugin zsh-syntax-highlighting (Destaca se a sintaxe do comando esta ok ou não):
 
-  ```git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting```
+  ```$ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting```
   * Adicionar o 'zsh-syntax-highlighting' aos plugns no arquivo '.zshrc'
 
 - Instalar plugin zsh-autosuggestions (Sugere comandos ja executado):
 
-  ```git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions```
+  ```$ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions```
   * Adicionar o 'zsh-autosuggestions' aos plugns no arquivo '.zshrc'
 
 
 - Instalar plugin FZF:
 
-  ```git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && ~/.fzf/install```
+  ```$ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && ~/.fzf/install```
   * Responder “y” a todas as perguntas  
   * Agora com CTRL + T no terminal é mostrado as pastas para seleção
   * Com CTRL + R, tem a lista dos ultimo comandos executados
@@ -60,13 +60,46 @@
 
 - Instalar Hack font:
 
-  * Fazer donwload da fonte [aqui](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.0.0/Hack.zip)
+  * Fazer donwload da fonte no pacote deste repositorio (https://github.com/rodrigospimentacwb/linux/tree/main/hack-font)
   * Executar os commandos:
   ```
-    mkdir ~/.fonts && cd ~/.fonts
-    unzip ~/Downloads/<the_chosen_font>.zip
+    $ sudo mkdir /usr/share/fonts/opentype/hack
+    $ cd /usr/share/fonts/opentype/hack
+    $ sudo unzip ~/Downloads/hack-font.zip
+    $ sudo fc-cache -f -v
   ```
   * Alterar a font padrão nas propriedades do terminal
+ 
+ - Instalar o powerlevel9k (Personalização de terminal):
+    
+    * Rodar o comando:
+  
+    ```$ git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k```
+    
+    * Abrir o arquivo '.zshrc' e adiconar na linha 'ZSH_THEME':
+    ```
+    ZSH_THEME="powerlevel9k/powerlevel9k"
+    POWERLEVEL9K_MODE="nerdfont-complete"
+    POWERLEVEL9K_SHORTEN_DIR_LENGTH="1"
+    POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir rbenv vcs)
+    POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(date time)
+    ```
+    * Documentação: https://github.com/Powerlevel9k/powerlevel9k
+
+  - Adicionar alias no '.zshrc' abaixo de '# navigation alias' (Pode criar n alias para n comandos):
+  
+    Ex: 
+    
+    ```alias mvntree="mvn org.apache.maven.plugins:maven-dependency-plugin:2.10:tree -Dverbose=true > dependencias.txt```
+    
+  - Adicionar o Tilix (Criador de abas no terminal):
+
+    ```
+    sudo apt-get install -y tilix
+    ```
+    * Para abrir via teclado, utilizar SHIF + CTRL + T
+    * Pode utilizar a fonte hack instalada também
+    * Documentação: https://gnunn1.github.io/tilix-web/
   
  Referências:
 * [Tutorial 1](https://blog.rocketseat.com.br/terminal-com-oh-my-zsh-spaceship-dracula-e-mais/)
@@ -131,7 +164,7 @@ sudo chmod ugo+wx /media/username/your_drive
 
 - Criar um arquivo
 
-  ```touch nomeArquivo.extenção```
+  ```$ touch nomeArquivo.extenção```
 
 - Limpar a tela do terminal
 
@@ -143,19 +176,19 @@ sudo chmod ugo+wx /media/username/your_drive
 
 - Abrir a pasta do local do terminal
 sudo chmod ugo+wx /media/username/your_drive
-  ```nautilus . (ao invez do "." pode passar o nome do arquivo)```
+  ```$ nautilus . (ao invez do "." pode passar o nome do arquivo)```
 
 - Salvar configurações atuais como default no linux (antes de reiniciar)
 
-  ```alsactl store```
+  ```$ alsactl store```
 
 - Pegar ip da maquina
 
-  ```ip a (procurar por - ppp0)```
+  ```$ ip a (procurar por - ppp0)```
 
 - Liberar porta
 
-  ```kill $((lsof -i -n -P | grep 8080) | awk '{print $2}')```
+  ```$ kill $((lsof -i -n -P | grep 8080) | awk '{print $2}')```
 
 - Desintalar pacote
 
@@ -165,12 +198,16 @@ sudo chmod ugo+wx /media/username/your_drive
 
 - Zipar (-r é recursive)
 
-  ```zip logs.zip -r 'pasta'```
+  ```$ zip logs.zip -r 'pasta'```
 
 - Apagar pastasudo chmod ugo+wx /media/username/your_drive
 
-  ```sudo rm -R DIRETORIO```
+  ```$ sudo rm -R DIRETORIO```
 
 - Adicionar permissão de escrita em nova partição:
 
-  ```sudo chmod ugo+wx /media/username/your_drive```
+  ```$ sudo chmod ugo+wx /media/username/your_drive```
+  
+- Recarregar fontes do sistema:
+
+  ```$ sudo fc-cache -f -v```
