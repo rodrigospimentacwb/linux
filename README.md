@@ -2,18 +2,62 @@
 
 #### Atalhos, configurações e outros
 
-## Instalando o ZSH (Terminal):
+## Configuração de ambiente Linux:
 
-* [Tutorial 1](https://blog.rocketseat.com.br/terminal-com-oh-my-zsh-spaceship-dracula-e-mais/)
-* [Tutorial 2](https://medium.com/@ivanaugustobd/your-terminal-can-be-much-much-more-productive-5256424658e8)
+- Antes de começar, atualizar o apt get:
+
+  ```sudo apt update && sudo apt upgrade```
+
+- Instar o cUrl:
+
+  ```sudo apt install curl```
+
+- Instalar o GIT:
+
+  ```sudo apt-get install git-all```
+  
+
+### ZSH Terminal:
+  
+- Instalar ZSH:
+
+  ```apt install zsh```
+
+- Instalar o Oh my ZSH:
+
+  ```curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh; zsh```
+
+- Adicionar plugin DNF:
+
+  * Abrir o arquivo '.zshrc' na raiz das pastas pessoais
+  * Na parte 'plugins=(git)' adicionar o DNF
+  ```
+  Ex: plugins=(
+               git
+               dnf
+              )
+  ```
+
+- Instalar o plugin zsh-syntax-highlighting (Destaca se a sintaxe do comando esta ok ou não):
+
+  ```git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting```
+  * Adicionar o 'zsh-syntax-highlighting' aos plugns no arquivo '.zshrc'
+
+- Instalar plugin zsh-autosuggestions (Sugere comandos ja executado):
+
+  ```git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions```
+  * Adicionar o 'zsh-autosuggestions' aos plugns no arquivo '.zshrc'
+
 
 - Instalar plugin FZF:
  
   https://github.com/junegunn/fzf
+  
+ Referências:
+* [Tutorial 1](https://blog.rocketseat.com.br/terminal-com-oh-my-zsh-spaceship-dracula-e-mais/)
+* [Tutorial 2](https://medium.com/@ivanaugustobd/your-terminal-can-be-much-much-more-productive-5256424658e8)
 
-- Instalando o FiraCode:
-
-  https://blog.programster.org/ubuntu-install-fira-code-font
+### Programas DEV:
 
 - Instalando o github desktop:
 
