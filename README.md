@@ -36,7 +36,7 @@
   ```$ sdk install java 8.0.275.fx-zulu"```
 
 - Instalar o maven
-
+sudo chmod ugo+wx /media/username/your_drive
   ```$ sdk install maven```
 
 - Instalar docker
@@ -83,7 +83,7 @@
   ```ctrl_alt+t```
 
 - Abrir a pasta do local do terminal
-
+sudo chmod ugo+wx /media/username/your_drive
   ```nautilus . (ao invez do "." pode passar o nome do arquivo)```
 
 - Salvar configurações atuais como default no linux (antes de reiniciar)
@@ -108,6 +108,10 @@
 
   ```zip logs.zip -r 'pasta'```
 
-- Apagar pasta
+- Apagar pastasudo chmod ugo+wx /media/username/your_drive
 
   ```sudo rm -R DIRETORIO```
+
+- Adicionar permissão de escrita em nova partição:
+
+  ```sudo chmod ugo+wx /media/username/your_drive```
