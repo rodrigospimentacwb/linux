@@ -128,7 +128,7 @@
   ```$ sdk install java 8.0.275.fx-zulu"```
 
 - Instalar o maven
-sudo chmod ugo+wx /media/username/your_drive
+
   ```$ sdk install maven```
 
 - Instalar docker
