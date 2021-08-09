@@ -125,7 +125,7 @@
   
   Referêcia: https://www.azul.com/downloads/zulu-community/?package=jdk
   
-  ```$ sdk install java 8.0.275.fx-zulu"```
+  ```$ sdk install java 8.0.275.fx-zulu```
 
 - Instalar o maven
 
