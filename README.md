@@ -141,13 +141,6 @@
 
   https://www.postman.com/downloads/
 
-- Git ssh ativação (opcional):
-  
-  https://docs.github.com/pt/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
-  
-  ```$ ssh -T git@github.com```
-
-
 - Problemas de atalhos com Unbuntu e IntelliJ:
 
   https://askubuntu.com/questions/412046/unable-to-use-intellij-idea-keyboard-shortcuts-on-ubuntu
