@@ -136,6 +136,8 @@
   https://docs.docker.com/engine/install/ubuntu/
   
   https://docs.docker.com/engine/install/linux-postinstall/ (evitar docker pedir sudo)
+  
+  https://docs.docker.com/compose/install/
 
 - Instalar o postman
 
@@ -144,6 +146,10 @@
 - Problemas de atalhos com Unbuntu e IntelliJ:
 
   https://askubuntu.com/questions/412046/unable-to-use-intellij-idea-keyboard-shortcuts-on-ubuntu
+  
+- Dock Station
+
+  https://dockstation.io/
 
 ## Comandos uteis:
 
