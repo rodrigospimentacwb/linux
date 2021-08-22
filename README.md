@@ -39,7 +39,7 @@
               )
   ```
 
-- Instalar o plugin zsh-syntax-highlighting (Destaca se a sintaxe do comando esta ok ou não):
+- Instalar o plugin zhttps://github.com/wagoodman/divesh-syntax-highlighting (Destaca se a sintaxe do comando esta ok ou não):
 
   ```$ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting```
   * Adicionar o 'zsh-syntax-highlighting' aos plugns no arquivo '.zshrc'
@@ -158,6 +158,10 @@
 - Vs Code
 
   https://code.visualstudio.com/download
+  
+- Dive (Analisar imagem docker)
+
+  https://github.com/wagoodman/dive
 
 ## Comandos uteis:
 
