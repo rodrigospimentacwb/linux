@@ -150,6 +150,14 @@
 - Dock Station
 
   https://dockstation.io/
+  
+- Notepad++
+
+  https://www.edivaldobrito.com.br/editor-de-codigo-notepad-no-linux/
+  
+- Vs Code
+
+  https://code.visualstudio.com/download
 
 ## Comandos uteis:
 
@@ -188,7 +196,7 @@ sudo chmod ugo+wx /media/username/your_drive
 - Liberar porta
 
   ```$ kill $((lsof -i -n -P | grep 8080) | awk '{print $2}')```
-
+https://code.visualstudio.com/download
 - Desintalar pacote
 
   ```$ sudo apt-get remove package-name```
