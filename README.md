@@ -205,7 +205,9 @@ https://code.visualstudio.com/download
 
   ```$ sudo apt-get remove package-name```
   ou
-  ```$ sudo apt-get purge package-name```
+  ```$ sudo apt-get purg- Dive (Analisar imagem docker)
+
+  https://github.com/wagoodman/divee package-name```
 
 - Zipar (-r é recursive)
 
