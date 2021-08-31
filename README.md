@@ -15,9 +15,10 @@
 - Instalar o GIT:
 
   ```$ sudo apt-get install git-all```
-  
 
-### ZSH Terminal:
+### ZSH Termina  
+19
+l:
   
 - Instalar ZSH:
 
@@ -165,6 +166,10 @@
 
 ## Comandos uteis:
 
+- Instalar o netstat:
+
+  ```sudo apt update && sudo apt install net-tools```  
+
 - Onde esta instalado um programa:
 
   ```$ whereis nome_do_programa```
@@ -186,7 +191,9 @@
   ```ctrl_alt+t```
 
 - Abrir a pasta do local do terminal
-sudo chmod ugo+wx /media/username/your_drive
+sudo chmod ugo+wx /media/username/your_drive  
+19
+
   ```$ nautilus . (ao invez do "." pode passar o nome do arquivo)```
 
 - Salvar configurações atuais como default no linux (antes de reiniciar)
