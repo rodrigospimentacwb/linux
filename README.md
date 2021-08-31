@@ -5,8 +5,8 @@
 ## Configuração de ambiente Linux:
 
 - Antes de começar, atualizar o apt get:
-
-  ```$ sudo apt update && sudo apt upgrade```
+netstat -lnp | grep 8080
+  ```$ sudo apt update && sudo apt upgrade```netstat -lnp | grep 8080
 
 - Instar o cUrl:
 
@@ -20,7 +20,9 @@
 19
 l:
   
-- Instalar ZSH:
+- Instalar ZS
+210
+  ```H:
 
   ```$ apt install zsh```
 
@@ -47,6 +49,8 @@ l:
 
 - Instalar plugin zsh-autosuggestions (Sugere comandos ja executado):
 
+210
+  ```
   ```$ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions```
   * Adicionar o 'zsh-autosuggestions' aos plugns no arquivo '.zshrc'
 
@@ -62,7 +66,9 @@ l:
 - Instalar Hack font:
 
   * Fazer donwload da fonte no pacote deste repositorio (https://github.com/rodrigospimentacwb/linux/tree/main/hack-font)
-  * Executar os commandos:
+  * Executar os comm
+210
+  ```andos:
   ```
     $ sudo mkdir /usr/share/fonts/opentype/hack
     $ cd /usr/share/fonts/opentype/hack
@@ -90,6 +96,8 @@ l:
   - Adicionar alias no '.zshrc' abaixo de '# navigation alias' (Pode criar n alias para n comandos):
   
     Ex: 
+210
+  ```
     
     ```alias mvntree="mvn org.apache.maven.plugins:maven-dependency-plugin:2.10:tree -Dverbose=true > dependencias.txt```
     
@@ -191,8 +199,6 @@ l:
   ```ctrl_alt+t```
 
 - Abrir a pasta do local do terminal
-sudo chmod ugo+wx /media/username/your_drive  
-19
 
   ```$ nautilus . (ao invez do "." pode passar o nome do arquivo)```
 
@@ -207,14 +213,19 @@ sudo chmod ugo+wx /media/username/your_drive  
 - Liberar porta
 
   ```$ kill $((lsof -i -n -P | grep 8080) | awk '{print $2}')```
-https://code.visualstudio.com/download
+  
+  ou
+  
+  ```
+  $ netstat -lnp | grep 8080
+  $ kill -9 PID_DO_PROCESSO
+  ```
+
 - Desintalar pacote
 
   ```$ sudo apt-get remove package-name```
   ou
-  ```$ sudo apt-get purg- Dive (Analisar imagem docker)
-
-  https://github.com/wagoodman/divee package-name```
+  ```$ sudo apt-get purg package-name```
 
 - Zipar (-r é recursive)
 
