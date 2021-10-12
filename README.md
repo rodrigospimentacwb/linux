@@ -56,7 +56,7 @@ l:
   $ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
   ```
   
-  * Adicionar o 'zsh-autosuggestions' aos plugns no arquivo '.zshrc'
+  * Adicionar o 'zsh-autosuggestions' aos plugins no arquivo '.zshrc'
 
 
 - Instalar plugin FZF:
