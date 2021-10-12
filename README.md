@@ -44,20 +44,27 @@ l:
 
 - Instalar o plugin zhttps://github.com/wagoodman/divesh-syntax-highlighting (Destaca se a sintaxe do comando esta ok ou não):
 
-  ```$ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting```
+  ```
+  $ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+  ```
+  
   * Adicionar o 'zsh-syntax-highlighting' aos plugns no arquivo '.zshrc'
 
 - Instalar plugin zsh-autosuggestions (Sugere comandos ja executado):
 
-210
-  ```
-  ```$ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions```
+  ```
+  $ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+  ```
+  
   * Adicionar o 'zsh-autosuggestions' aos plugns no arquivo '.zshrc'
 
 
 - Instalar plugin FZF:
 
-  ```$ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && ~/.fzf/install```
+  ```
+  $ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && ~/.fzf/install
+  ```
+  
   * Responder “y” a todas as perguntas  
   * Agora com CTRL + T no terminal é mostrado as pastas para seleção
   * Com CTRL + R, tem a lista dos ultimo comandos executados
@@ -66,15 +73,15 @@ l:
 - Instalar Hack font:
 
   * Fazer donwload da fonte no pacote deste repositorio (https://github.com/rodrigospimentacwb/linux/tree/main/hack-font)
-  * Executar os comm
-210
-  ```andos:
+  * Executar os commandos:
+  
   ```
     $ sudo mkdir /usr/share/fonts/opentype/hack
     $ cd /usr/share/fonts/opentype/hack
     $ sudo unzip ~/Downloads/hack-font.zip
     $ sudo fc-cache -f -v
   ```
+  
   * Alterar a font padrão nas propriedades do terminal
  
  - Instalar o powerlevel9k (Personalização de terminal):
@@ -96,10 +103,10 @@ l:
   - Adicionar alias no '.zshrc' abaixo de '# navigation alias' (Pode criar n alias para n comandos):
   
     Ex: 
-210
-  ```
-    
-    ```alias mvntree="mvn org.apache.maven.plugins:maven-dependency-plugin:2.10:tree -Dverbose=true > dependencias.txt```
+        
+    ```
+    alias mvntree="mvn org.apache.maven.plugins:maven-dependency-plugin:2.10:tree -Dverbose=true > dependencias.txt
+    ```
     
   - Adicionar o Tilix (Criador de abas no terminal):
 
