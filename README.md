@@ -249,3 +249,7 @@ l:
 - Recarregar fontes do sistema:
 
   ```$ sudo fc-cache -f -v```
+
+- Buscar diretorios:
+
+  ```find / -type d -name "*tomcat*"```
