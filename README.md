@@ -250,6 +250,11 @@ l:
 
   ```$ sudo fc-cache -f -v```
 
+- Verificar se um server esta escutando em uma porta
+
+  ```$ netstat -tuln | grep 9123```
+  * Se retornar algo, esta escutando
+
 - Buscar diretorios:
 
   ```find / -type d -name "*tomcat*"```
